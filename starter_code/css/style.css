@@ -73,6 +73,73 @@ a {
   font-weight: 800;
 }
 
+.register-container{
+  width: 800px;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.register-container h1{
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.register-now-title{
+  font-size: 30px;
+  font-weight: 400px;
+}
+
+input {
+  border: 0px;
+  border-bottom: 1px solid #666;
+  font-size: 18px;
+  padding: 10px;
+  text-align: left;
+  margin-bottom: 10px;
+  width: 400px !important;
+  float: left;
+
+}
+input[type="submit"] {
+  background-color: #2699FB !important;
+  color: white;
+  width: 100px auto !important;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+label{
+  color: #222;
+  font-size: 18px;
+  margin-right: 20px;
+  margin-top: 10px;
+  width: 300px;
+  float: left;
+}
+
+#myList{
+  float:left;
+  margin-top: 5px;
+  width: 200px;
+  padding: 10px 5px;
+  font-size: 16px;
+  color: #666;
+}
+
+#contact-form-message{
+  float:left;
+  border: 0px;
+  border-bottom: 1px solid #666;
+  margin-top: 5px;
+  width: 400px;
+  padding: 10px 5px;
+  font-size: 16px;
+  color: #666;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
 header {
   background: #033048;
   padding: 25px 0;
@@ -166,7 +233,9 @@ blockquote span {
   font-style: normal;
 }
 #main {
-  margin-top: 80px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 20px;
 }
 #posts {
   width: 73%;
@@ -293,6 +362,13 @@ footer p {
 }
 
 @media only screen and (max-width: 768px) {
+
+  .register-container{
+    margin-left: 5px;
+  }
+  label {
+    width: 250px;
+  }
   body {
     font-size: 18px;
   }
@@ -368,5 +444,3 @@ footer p {
     display: none;
   }
 }
-
-

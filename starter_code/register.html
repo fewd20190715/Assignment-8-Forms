@@ -10,7 +10,7 @@
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
-
+  	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	</head>
 	<body>
 		<header>
@@ -20,19 +20,52 @@
 					<ul>
 						<li><a href="index.html">Home</a></li>
 						<li><a href="blog.html">Blog</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="register.html">Register</a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
 		<section id="main">
 			<div class="container">
-				<section id="contact">
-					<input type="submit" value="Register Now!">
+				<div class="register-container">
+					<h1 class="register-now-title">Register Now!</h1>
+						<div id="register">
+							<form class="widget-contact-form" role="form" method="post">
+								<div class="form-group col-md-12">
+										<label form="name">Name:</label>
+										<input type="text" aria-required="true" name="contact-form-name" class="form-control required name" placeholder="Enter your Name">
+								</div>
+								<div class="form-group col-md-12">
+										<label form="email">Email:</label>
+										<input type="email" aria-required="true" name="contact-form-email" class="form-control required email" placeholder="Enter your Email">
+								</div>
+								<div class="form-group col-md-12">
+										<label form="phone">Phone:</label>
+										<input type="Phone" aria-required="true" name="contact-form-phone" class="form-control required phone" placeholder="Enter your Phone">
+								</div>
+								<div class="form-group col-md-12">
+										<label form="password">Password:</label>
+										<input type="password" aria-required="true" name="contact-form-password" class="form-control required company" placeholder="Enter your Password">
+								</div>
+								<div class="form-group col-md-12">
+									<label form="">How did you hear about us?</label>
+									<select id="myList" aria-required="true" name="contact-form-social" class="form-control required Social">
+										<option value = "LinkedIn">LinkedIn</option>
+										<option value = "Twitter">Twitter</option>
+										<option value = "Instagram">Instagram</option>
+										<option value = "Other">Other</option>
+									</select>
+								</div>
+								</div>
+								<div class="form-group">
+								<label form="message">Any Additional Feedback?</label>
+								<textarea type="text-area" name="contact-form-message" id="contact-form-message" class="form-control" placeholder="Enter your Message"></textarea>
+							</div>
+						<input type="submit" value="Register Now!">
+					</div>
 				</section>
 			</div>
 		</section>
-
 		<footer>
 			<h4 class="logo">Relaxr</h4>
 
@@ -43,5 +76,19 @@
 
 			<p class="copyright">Copyright 2015. Relaxr.</p>
 		</footer>
+		<script>
+function displayVals() {
+  var singleValues = $( "#register" ).val();
+  var multipleValues = $( "#myList" ).val() || [];
+  // When using jQuery 3:
+  // var multipleValues = $( "#multiple" ).val();
+  $( "p" ).html( "<b>Single:</b> " + singleValues +
+    " <b>Multiple:</b> " + multipleValues.join( ", " ) );
+}
+
+$( "select" ).change( displayVals );
+displayVals();
+</script>
 	</body>
+
 </html>
