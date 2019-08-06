@@ -3,7 +3,7 @@
 ---
 
 
-### Description 
+### Description
 
 This week, you'll be practicing your form skills: you have the option of adding a form to your final project, finishing the Relaxr form that will be started in class, or building a form for CitiPix. The form you build must include at least three different types of HTML form elements and some light CSS styling. We have given you an example of a form that renders well on the web and mobile devices, as well as an example, with starter code, of a registration form you could build for Relaxr.
 
@@ -15,7 +15,7 @@ This week, you'll be practicing your form skills: you have the option of adding 
 ### Real-World Applications
 
 - Be able to apply the proper HTML and CSS styles to create a modern web form
-- Revisit applications and projects to iterate on code you've written 
+- Revisit applications and projects to iterate on code you've written
 
 
 <br>
@@ -23,17 +23,17 @@ This week, you'll be practicing your form skills: you have the option of adding 
 ---
 
 
-### Technical Requirements 
+### Technical Requirements
 
-- Use at least three different types of HTML5 form elements: ```input```, ```textarea```, ```select```, ```radio``` ```button```, ```dropdown```, ```checkbox```
-- Link to your sign-up page from different pages in your application 
-- Style forms lightly using CSS
-- Make sure a user's password is not visible when they are entering it
+- Use at least three different types of HTML5 form elements: ```input```, ```textarea```, ```select```, ```radio``` ```button```, ```dropdown```, ```checkbox``` DONE
+- Link to your sign-up page from different pages in your application DONE
+- Style forms lightly using CSS DONE
+- Make sure a user's password is not visible when they are entering it DONE
 
 #### Bonus
 
-- Use responsive media queries to allow for proper rendering on mobile devices 
-- Use jQuery and display an error message if any of the input fields are left blank upon submission 
+- Use responsive media queries to allow for proper rendering on mobile devices
+- Use jQuery and display an error message if any of the input fields are left blank upon submission
 - To replicate application flow, add another page that says "Thanks for Relaxing with us!" after submission
 
 
@@ -69,5 +69,4 @@ Depending on the nature of their assignment, students should either use their co
 
 ### Final Project Milestone 3
 
-By week 8, you should have submitted a draft of the JavaScript and jQuery you'll need for your final project.  For this week, focus iterating on your project to turn in an updated draft. 
-
+By week 8, you should have submitted a draft of the JavaScript and jQuery you'll need for your final project.  For this week, focus iterating on your project to turn in an updated draft.
